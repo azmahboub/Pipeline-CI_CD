@@ -31,7 +31,7 @@ pipeline {
         stage('🧪 Test') {
             steps {
                 sh 'sleep 2'
-             
+                sh 'curl --fail http://host.docker.internal:8083'
             }
         }
     }
