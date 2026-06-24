@@ -38,7 +38,7 @@ pipeline {
 
     post {
         success {
-            echo '✅ Pipeline réussi ! Application accessible sur http://localhost:8081'
+            echo '✅ Pipeline réussi ! Application accessible sur http://localhost:8083'
         }
         failure {
             echo '❌ Échec du pipeline. Consultez les logs.'
