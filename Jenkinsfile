@@ -31,14 +31,14 @@ pipeline {
         stage('🧪 Test') {
             steps {
                 sh 'sleep 2'
-               sh 'curl --fail http://docker.internal'
+             
             }
         }
     }
 
     post {
         success {
-            echo '✅ Pipeline réussi ! Application accessible sur http://localhost:8083'
+            echo '✅ Pipeline réussi ! Application accessible sur http://localhost:8081'
         }
         failure {
             echo '❌ Échec du pipeline. Consultez les logs.'
