@@ -31,7 +31,7 @@ pipeline {
         stage('🧪 Test') {
             steps {
                 sh 'sleep 2'
-               'curl --fail http://docker.internal'
+               sh 'curl --fail http://docker.internal'
             }
         }
     }
